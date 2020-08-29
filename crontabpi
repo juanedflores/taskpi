@@ -1,0 +1,5 @@
+0 6 * * * /usr/bin/task sync > /home/pi/sync.txt
+30 6 * * * /usr/bin/python3 /home/pi/ShameBot/TaskVisualization/outputtask.py > /home/pi/outputtask.txt
+0 7 * * * /usr/local/bin/processing-java --sketch=/home/pi/ShameBot/TaskVisualization/ --run > /home/pi/processing.txt
+30 7 * * * /usr/bin/python2 /home/pi/ShameBot/ShameBot.py > /home/pi/bot.txt
+
