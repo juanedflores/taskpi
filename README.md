@@ -32,3 +32,17 @@ Features to include:
   - Sound/TTS Audio Feedback
   - Smart and Personalized Recommendations
   - Automation of task projects setup
+
+## crontabmac
+This is the file that automates the syncing process and sends the timew export file.
+Make sure you can ssh and scp to the server pi without prompting for a password.
+
+Steps:
+`ssh-keygen -t rsa`
+Will generate a private key `~/.ssh/id_rsa`.
+Will generate a public key `~/.ssh/id_rsa.pub`.
+
+Copy the content of the public key to the remote server in this file.
+`/home/pi/.ssh/authorized_keys`
+
+Verify that you can ssh or scp without prompting a password.
