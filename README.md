@@ -47,7 +47,7 @@ Copy the content of the public key to the remote server in this file.
 
 Verify that you can ssh or scp without prompting a password.
 
-## Note on setting up a taskpi server
+## Note on setting up a taskpi server  
 This is a complicated and annoying process. :(
 If the server is intact and you just need to add the same user to the new client computer:
 
@@ -72,4 +72,4 @@ Follow this guide if there are problems: https://gothenburgbitfactory.github.io/
 
 ## Note on setting up the pi taskd server after booting
 This was also a complicated process.
-I don't remember the what and why, but notice the taskd.service file running in systemd. `/etc/systemd/system`. Also note that it has a ExecStartPre to delay 30 milliseconds. This was needed because it needs to wait for another necessary process to start up first. I forgot what exactly but if you need to set up the server again which was a nightmare, read up on how to set up systemd services.
+I don't remember the what and why, but notice the taskd.service file running in systemd. `/etc/systemd/system/`. Also note that it has a ExecStartPre to delay 30 milliseconds. This was needed because it needs to wait for another necessary process to start up first. I forgot what exactly but if you need to set up the server again which was a nightmare, read up on how to set up systemd services.
