@@ -1,2 +1,2 @@
-0 5 * * * /usr/local/bin/task sync && /usr/local/bin/timew export `date -v-1d +%F` > /Users/juaneduardoflores/timewexport.txt
+* 5 * * * /Users/juaneduardoflores/scripts/export_timew.sh
 1 5 * * * /usr/bin/scp /Users/juaneduardoflores/timewexport.txt pi@192.168.1.200:/home/pi/ShameBot/TaskVisualization/ && rm /Users/juaneduardoflores/timewexport.txt
